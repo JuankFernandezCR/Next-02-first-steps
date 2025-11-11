@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { FaReact } from "react-icons/fa";
 import { SidebarMenuItem } from './SidebarMenuItem';
 import { IoCalculator } from "react-icons/io5";
-import { MdDashboard, MdOutlineCatchingPokemon } from "react-icons/md";
+import { MdDashboard, MdOutlineCatchingPokemon, MdFavorite } from "react-icons/md";
 
 const menuItems = [
     {
@@ -23,6 +23,12 @@ const menuItems = [
         subTittle: 'Generacion Estatica',
         icon: <MdOutlineCatchingPokemon size={40}/>,
         path: '/dashboard/pokemons'
+    },
+    {
+        title: 'Favorites',
+        subTittle: 'Global State',
+        icon: <MdFavorite size={40}/>,
+        path: '/dashboard/favorites'
     },
 ];
 
